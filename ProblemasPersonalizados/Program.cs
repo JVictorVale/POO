@@ -44,6 +44,8 @@ public class Program
                 reservation.UpdateDates(checkIn,checkOut);
                 Console.WriteLine("Reservation: " + reservation);
             }
+
+            int n;
         }
 
     }

@@ -1,3 +1,5 @@
+using ProblemasPersonalizados.Entities.Exceptions;
+
 namespace ProblemasPersonalizados.Entities;
 
 public class Reservation
@@ -11,11 +13,16 @@ public class Reservation
         
     }
 
-    public Reservation(int roomNumber, DateTime checkin, DateTime checkout)
+    public Reservation(int roomNumber, DateTime checkIn, DateTime checkOut)
     {
+        if (checkOut <= checkIn)
+        {
+            throw new DomainException("Check-out date must be after check-in date");
+        }
+        
         RoomNumber = roomNumber;
-        CheckIn = checkin;
-        CheckOut = checkout;
+        CheckIn = checkIn;
+        CheckOut = checkOut;
     }
 
     public int Duration()
@@ -26,6 +33,17 @@ public class Reservation
 
     public void UpdateDates(DateTime checkIn, DateTime checkOut)
     {
+        DateTime now = DateTime.Now;
+        if (checkIn < now || checkOut < now)
+        {
+            throw new DomainException("Reversation dates for update must be future dates");
+        }
+
+        if (checkOut <= checkIn)
+        {
+            throw new DomainException("Check-out date must be after check-in date");
+        }
+        
         CheckIn = checkIn;
         CheckOut = checkOut;
     }
@@ -40,6 +58,6 @@ public class Reservation
                + CheckOut.ToString("dd/MM/yyyy")
                + ", "
                + Duration()
-               + "nights";
+               + " nights";
     }
 }

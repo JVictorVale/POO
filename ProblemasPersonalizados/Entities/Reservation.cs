@@ -60,4 +60,6 @@ public class Reservation
                + Duration()
                + " nights";
     }
+    
+    
 }

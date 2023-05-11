@@ -27,7 +27,6 @@ public class Program
             Console.Write("Check-out date (dd/MM/yyyy): ");
             checkOut = DateTime.Parse(Console.ReadLine());
             
-            Console.WriteLine();
             reservation.UpdateDates(checkIn, checkOut);
             Console.WriteLine("Reservation: " + reservation);
 

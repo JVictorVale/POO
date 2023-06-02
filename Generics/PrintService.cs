@@ -1,5 +1,6 @@
 namespace Generics
 {
+
     public class PrintService<T>
     {
         private T[] _values = new T[10];

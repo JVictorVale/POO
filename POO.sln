@@ -46,6 +46,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetricoesGenerics", "Retric
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioResolvido", "ExercicioResolvido\ExercicioResolvido.csproj", "{E20AE147-89B0-4255-AB9B-498F8C9ECD04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary", "Dictionary\Dictionary.csproj", "{C7F61D23-7A1B-48F6-9BF6-DBFEBA17C2F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,7 @@ Global
 		{C879FD89-45B8-427B-B9C5-026E95422E0C} = {55CB15A1-9D26-4570-A1B1-4463F828D8B0}
 		{0A3BCD51-7B6C-4DB2-92CC-489BFB450D97} = {55CB15A1-9D26-4570-A1B1-4463F828D8B0}
 		{E20AE147-89B0-4255-AB9B-498F8C9ECD04} = {55CB15A1-9D26-4570-A1B1-4463F828D8B0}
+		{C7F61D23-7A1B-48F6-9BF6-DBFEBA17C2F5} = {55CB15A1-9D26-4570-A1B1-4463F828D8B0}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{00546A6C-B602-44BC-A1F1-61BC9D233FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -132,5 +135,9 @@ Global
 		{E20AE147-89B0-4255-AB9B-498F8C9ECD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E20AE147-89B0-4255-AB9B-498F8C9ECD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E20AE147-89B0-4255-AB9B-498F8C9ECD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7F61D23-7A1B-48F6-9BF6-DBFEBA17C2F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7F61D23-7A1B-48F6-9BF6-DBFEBA17C2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7F61D23-7A1B-48F6-9BF6-DBFEBA17C2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7F61D23-7A1B-48F6-9BF6-DBFEBA17C2F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
